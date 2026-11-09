@@ -1,14 +1,1 @@
-{
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "types": ["node", "vitest/globals"],
-    "lib": ["ES2022", "DOM"]
-  },
-  "include": ["packages/core/schema.ts", "packages/core/fs.ts", "packages/core/chunker.ts", "packages/core/index.ts", "tests/primitives.test.ts"]
-}
+{"compilerOptions":{"target":"ES2022","module":"ESNext","moduleResolution":"Bundler","strict":true,"jsx":"react-jsx","esModuleInterop":true,"skipLibCheck":true,"resolveJsonModule":true,"types":["node","vitest/globals"],"lib":["ES2022","DOM"],"noEmit":true},"include":["packages","apps","tests","vite.config.ts"]}
