@@ -15,7 +15,7 @@
     "build": "node scripts/build-native.mjs && tsc --noEmit && node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "node scripts/build-native.mjs && vitest run tests/unit.test.ts",
+    "test": "vitest run tests/*.test.ts",
     "test:integration": "node scripts/build-native.mjs && vitest run tests/integration.test.ts tests/crash.test.ts tests/lab-recovery.test.ts",
     "format": "prettier --write apps/desktop/*.{ts,tsx,css} packages/core/{lab,requests}.ts packages/evaluation/run.ts scripts/ui-smoke.mjs tests/lab-recovery.test.ts",
     "format:check": "prettier --check apps/desktop/*.{ts,tsx,css} packages/core/{lab,requests}.ts packages/evaluation/run.ts scripts/ui-smoke.mjs tests/lab-recovery.test.ts",
